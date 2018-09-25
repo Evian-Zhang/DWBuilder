@@ -1,6 +1,6 @@
 # macOS Mojave 动态壁纸生成器 DWBuilder 下载及使用说明
 ## 下载
-支持macOS 14.0的DWBuilder下载地址：
+支持macOS 14.0的DWBuilder下载地址：https://github.com/Evian-Zhang/DWBuilder/raw/master/DWBuilder.dmg
 
 ## 使用说明
 DWBuilder可以生成用户自定义的macOS Mojave支持的动态壁纸。<br>
@@ -23,5 +23,10 @@ DWBuilder可以生成用户自定义的macOS Mojave支持的动态壁纸。<br>
 ### BUG
 经测试，会出现预览图与桌面图不一致的情况，疑似桌面图会比预览图提前更换下一张图。这似乎是系统的bug。
 
+### DEMO
+
+我拿了我们东大的李文正图书馆的照片（拍摄+修图：我）和中国传统的天色计时法各做了一个demo，可在 https://github.com/Evian-Zhang/DWBuilder/tree/master/demo 下载。
+
 ### 问题反馈
+
 开发者邮箱：evianzhang1999@gmail.com
