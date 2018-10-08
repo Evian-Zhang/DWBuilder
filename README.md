@@ -2,6 +2,8 @@
 ## 下载
 支持macOS 14.0的DWBuilder下载地址：https://github.com/Evian-Zhang/DWBuilder/releases/download/v1.0/DWBuilder.dmg
 
+(最后一次更新：2018年10月8日)
+
 ## 使用说明
 DWBuilder可以生成用户自定义的macOS Mojave支持的动态壁纸。<br>
 本程序在设计的时候借鉴了 https://itnext.io/macos-mojave-dynamic-wallpaper-fd26b0698223 的思想，增加了UI，并增加了太阳高度角及太阳方位角的自动计算。<br>
