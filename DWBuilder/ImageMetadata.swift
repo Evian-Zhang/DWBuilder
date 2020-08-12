@@ -7,19 +7,30 @@
 
 import Foundation
 
+enum LatitudePosition {
+    case North
+    case South
+}
+
 struct ImageMetadata {
     let url: URL
-    let latitude: Double
-    let date: Date
+    var latitudePosition: LatitudePosition
+    var latitude: Double
+    var date: Date
     
-    init(url: URL, latitude: Double, date: Date) {
+    init(url: URL, latitudePosition: LatitudePosition, latitude: Double, date: Date) {
         self.url = url
+        self.latitudePosition = latitudePosition
         self.latitude = latitude
         self.date = date
     }
     
     var solarAngle: SolarAngle {
-        SolarAngle(latitude: self.latitude, date: self.date)
+        var latitude = self.latitude
+        if self.latitudePosition == .South {
+            latitude = -latitude
+        }
+        return SolarAngle(latitude: self.latitude, date: self.date)
     }
 }
 
