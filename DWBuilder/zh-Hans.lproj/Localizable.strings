@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  DWBuilder
+
+  Created by 张曙 on 2020/8/13.
+  
+*/
+
+"Export" = "导出";
+"Property list encoding failed" = "plist编码失败";
+"Can't open image at %@" = "无法打开图片%@";
+"Failed to create HEIC image" = "无法创建HEIC格式图片";
+"Failed to write image" = "无法写入图片";
+"Processing" = "处理中";
+"Success" = "成功";
+"OK" = "好";
+"Please click the above button to add some images" = "请点击上方按钮添加图片";
+"Shot at %@" = "摄于%@";
+"Modify" = "编辑";
+"Latitude %.2f north" = "北纬%.2f度";
+"Latitude %.2f south" = "南纬%.2f度";
+"Latitude" = "纬度";
+"Shot at" = "摄于";
+"Display static light wallpaper at image " = "浅色模式展示静态图片";
+"Display static dark wallpaper at image " = "深色模式展示静态图片";

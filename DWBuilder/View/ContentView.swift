@@ -15,6 +15,7 @@ struct ContentView: View {
     var body: some View {
         VSplitView {
             ImageListView(imageMetadatas: self.$viewModel.imageMetadatas)
+                .frame(maxWidth: .infinity)
             VStack {
                 ConfigView(lightIndex: self.$viewModel.lightIndex, darkIndex: self.$viewModel.darkIndex)
                 Button(action: self.exportImage) {
@@ -24,7 +25,7 @@ struct ContentView: View {
                 .sheet(isPresented: self.$isProcessSheetPresented) {
                     ProcessView(processStatus: self.processStatus)
                 }
-            .frame(maxWidth: .infinity)
+                .frame(maxWidth: .infinity)
         }
     }
     
@@ -54,7 +55,7 @@ struct ContentView: View {
                     }
                 } catch DWBuilderError.ImageNotFound(let url) {
                     DispatchQueue.global().sync {
-                        self.processStatus = .Failed("Can't open image at \(url)")
+                        self.processStatus = .Failed("Can't open image at \(url.path)")
                     }
                 } catch DWBuilderError.HEICCreatingFailed {
                     DispatchQueue.global().sync {

@@ -36,8 +36,8 @@ struct ImageRowView: View {
     
     func description(for latitude: Double, position: LatitudePosition) -> String {
         switch position {
-            case .North: return String(format: "Latitude %.2f north", latitude)
-            case .South: return String(format: "Latitude %.2f south", latitude)
+            case .North: return String(format: NSLocalizedString("Latitude %.2f north", comment: ""), latitude)
+            case .South: return String(format: NSLocalizedString("Latitude %.2f south", comment: ""), latitude)
         }
     }
 }

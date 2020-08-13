@@ -20,6 +20,7 @@
 		5649D11324E28D680040DCCE /* Wallpaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5649D11224E28D680040DCCE /* Wallpaper.swift */; };
 		5649D11524E2940E0040DCCE /* ImageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5649D11424E2940E0040DCCE /* ImageListView.swift */; };
 		5649D11724E299260040DCCE /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5649D11624E299260040DCCE /* ContentViewModel.swift */; };
+		565E573224E56823001E9559 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 565E573424E56823001E9559 /* Localizable.strings */; };
 		56AE2C7B24E4D7F200664E9F /* ConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AE2C7A24E4D7F200664E9F /* ConfigView.swift */; };
 		56AE2C7D24E4DE3600664E9F /* ProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AE2C7C24E4DE3600664E9F /* ProcessView.swift */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,7 @@
 		5649D11224E28D680040DCCE /* Wallpaper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallpaper.swift; sourceTree = "<group>"; };
 		5649D11424E2940E0040DCCE /* ImageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListView.swift; sourceTree = "<group>"; };
 		5649D11624E299260040DCCE /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		565E573324E56823001E9559 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		56AE2C7A24E4D7F200664E9F /* ConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigView.swift; sourceTree = "<group>"; };
 		56AE2C7C24E4DE3600664E9F /* ProcessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +86,7 @@
 				5649D10524E272770040DCCE /* Info.plist */,
 				5649D10624E272770040DCCE /* DWBuilder.entitlements */,
 				5649D10224E272770040DCCE /* Preview Content */,
+				565E573424E56823001E9559 /* Localizable.strings */,
 			);
 			path = DWBuilder;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 5649D0F024E272750040DCCE;
 			productRefGroup = 5649D0FA24E272750040DCCE /* Products */;
@@ -186,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5649D10424E272770040DCCE /* Preview Assets.xcassets in Resources */,
+				565E573224E56823001E9559 /* Localizable.strings in Resources */,
 				5649D10124E272770040DCCE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +219,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		565E573424E56823001E9559 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				565E573324E56823001E9559 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5649D10724E272770040DCCE /* Debug */ = {
