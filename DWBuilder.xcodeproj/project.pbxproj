@@ -75,23 +75,15 @@
 		5649D0FB24E272750040DCCE /* DWBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				56AE2C8024E4F0FD00664E9F /* Model */,
+				56AE2C7F24E4F0E600664E9F /* ViewModel */,
+				56AE2C7E24E4F0CB00664E9F /* View */,
 				5649D0FC24E272750040DCCE /* DWBuilderApp.swift */,
-				5649D0FE24E272750040DCCE /* ContentView.swift */,
-				5649D11624E299260040DCCE /* ContentViewModel.swift */,
-				56AE2C7C24E4DE3600664E9F /* ProcessView.swift */,
-				5649D11424E2940E0040DCCE /* ImageListView.swift */,
-				560E8B4924E36BEC0089EDDE /* ImageRowView.swift */,
-				560E8B4D24E382F80089EDDE /* ImageMetadataView.swift */,
-				56AE2C7A24E4D7F200664E9F /* ConfigView.swift */,
 				560E8B4B24E36F240089EDDE /* Universal.swift */,
 				5649D10024E272770040DCCE /* Assets.xcassets */,
 				5649D10524E272770040DCCE /* Info.plist */,
 				5649D10624E272770040DCCE /* DWBuilder.entitlements */,
 				5649D10224E272770040DCCE /* Preview Content */,
-				5649D10C24E2765C0040DCCE /* ImageMetadata.swift */,
-				5649D10E24E27F350040DCCE /* WallpaperGenerator.swift */,
-				5649D11024E2883F0040DCCE /* DWBuilderError.swift */,
-				5649D11224E28D680040DCCE /* Wallpaper.swift */,
 			);
 			path = DWBuilder;
 			sourceTree = "<group>";
@@ -102,6 +94,38 @@
 				5649D10324E272770040DCCE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		56AE2C7E24E4F0CB00664E9F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5649D0FE24E272750040DCCE /* ContentView.swift */,
+				56AE2C7C24E4DE3600664E9F /* ProcessView.swift */,
+				5649D11424E2940E0040DCCE /* ImageListView.swift */,
+				560E8B4924E36BEC0089EDDE /* ImageRowView.swift */,
+				560E8B4D24E382F80089EDDE /* ImageMetadataView.swift */,
+				56AE2C7A24E4D7F200664E9F /* ConfigView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		56AE2C7F24E4F0E600664E9F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5649D11624E299260040DCCE /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		56AE2C8024E4F0FD00664E9F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5649D10C24E2765C0040DCCE /* ImageMetadata.swift */,
+				5649D10E24E27F350040DCCE /* WallpaperGenerator.swift */,
+				5649D11024E2883F0040DCCE /* DWBuilderError.swift */,
+				5649D11224E28D680040DCCE /* Wallpaper.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
