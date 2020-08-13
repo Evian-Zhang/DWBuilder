@@ -35,3 +35,19 @@ class UniversalLatitudeFormatter {
         return formatter
     }
 }
+
+class UniversalImageIndexFormatter {
+    static let instance = createInstance()
+    
+    private class func createInstance() -> NumberFormatter {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .none
+        formatter.minimum = 1
+        
+        return formatter
+    }
+}
+
+class UniversalDispatchQueue {
+    static let instance = DispatchQueue(label: "top.evian-zhang.wallpaper")
+}

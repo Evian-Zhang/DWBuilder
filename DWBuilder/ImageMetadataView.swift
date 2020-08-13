@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ImageMetadataView: View {
-    @Binding var isPresented: Bool
     @Binding var imageMetadata: ImageMetadata
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         VStack {
@@ -30,7 +30,7 @@ struct ImageMetadataView: View {
                     .frame(maxWidth: 100.0)
             }
             Button(action: {
-                self.isPresented = false
+                self.presentationMode.wrappedValue.dismiss()
             }) {
                 Text("OK")
             }
@@ -40,6 +40,6 @@ struct ImageMetadataView: View {
 
 struct ImageMetadataView_Previews: PreviewProvider {
     static var previews: some View {
-        ImageMetadataView(isPresented: .constant(true), imageMetadata: .constant(ImageMetadata(url: URL(fileURLWithPath: "abcabcabcabcabcabcabcabcabc"), latitudePosition: .North, latitude: 30.0, date: Date())))
+        ImageMetadataView(imageMetadata: .constant(ImageMetadata(url: URL(fileURLWithPath: "abcabcabcabcabcabcabcabcabc"), latitudePosition: .North, latitude: 30.0, date: Date())))
     }
 }

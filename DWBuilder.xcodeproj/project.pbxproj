@@ -20,6 +20,8 @@
 		5649D11324E28D680040DCCE /* Wallpaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5649D11224E28D680040DCCE /* Wallpaper.swift */; };
 		5649D11524E2940E0040DCCE /* ImageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5649D11424E2940E0040DCCE /* ImageListView.swift */; };
 		5649D11724E299260040DCCE /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5649D11624E299260040DCCE /* ContentViewModel.swift */; };
+		56AE2C7B24E4D7F200664E9F /* ConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AE2C7A24E4D7F200664E9F /* ConfigView.swift */; };
+		56AE2C7D24E4DE3600664E9F /* ProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AE2C7C24E4DE3600664E9F /* ProcessView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		5649D11224E28D680040DCCE /* Wallpaper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallpaper.swift; sourceTree = "<group>"; };
 		5649D11424E2940E0040DCCE /* ImageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListView.swift; sourceTree = "<group>"; };
 		5649D11624E299260040DCCE /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		56AE2C7A24E4D7F200664E9F /* ConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigView.swift; sourceTree = "<group>"; };
+		56AE2C7C24E4DE3600664E9F /* ProcessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +78,11 @@
 				5649D0FC24E272750040DCCE /* DWBuilderApp.swift */,
 				5649D0FE24E272750040DCCE /* ContentView.swift */,
 				5649D11624E299260040DCCE /* ContentViewModel.swift */,
+				56AE2C7C24E4DE3600664E9F /* ProcessView.swift */,
 				5649D11424E2940E0040DCCE /* ImageListView.swift */,
 				560E8B4924E36BEC0089EDDE /* ImageRowView.swift */,
 				560E8B4D24E382F80089EDDE /* ImageMetadataView.swift */,
+				56AE2C7A24E4D7F200664E9F /* ConfigView.swift */,
 				560E8B4B24E36F240089EDDE /* Universal.swift */,
 				5649D10024E272770040DCCE /* Assets.xcassets */,
 				5649D10524E272770040DCCE /* Info.plist */,
@@ -167,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56AE2C7B24E4D7F200664E9F /* ConfigView.swift in Sources */,
 				560E8B4C24E36F240089EDDE /* Universal.swift in Sources */,
 				560E8B4E24E382F80089EDDE /* ImageMetadataView.swift in Sources */,
 				5649D11724E299260040DCCE /* ContentViewModel.swift in Sources */,
@@ -174,6 +181,7 @@
 				5649D10D24E2765C0040DCCE /* ImageMetadata.swift in Sources */,
 				5649D10F24E27F350040DCCE /* WallpaperGenerator.swift in Sources */,
 				5649D11524E2940E0040DCCE /* ImageListView.swift in Sources */,
+				56AE2C7D24E4DE3600664E9F /* ProcessView.swift in Sources */,
 				5649D11124E2883F0040DCCE /* DWBuilderError.swift in Sources */,
 				560E8B4A24E36BEC0089EDDE /* ImageRowView.swift in Sources */,
 				5649D11324E28D680040DCCE /* Wallpaper.swift in Sources */,

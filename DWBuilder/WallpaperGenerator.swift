@@ -62,7 +62,7 @@ private func appendDesktopProperties(to imageMetadata: CGMutableImageMetadata, k
         throw DWBuilderError.HEICCreatingFailed
     }
     
-    let base64PropertyList = data.base64EncodedData()
+    let base64PropertyList = data.base64EncodedString()
     let imageMetadataTag = CGImageMetadataTagCreate("http://ns.apple.com/namespace/1.0/" as CFString, "apple_desktop" as CFString, key as CFString, CGImageMetadataType.string, base64PropertyList as CFTypeRef)
     
     guard CGImageMetadataSetTagWithPath(imageMetadata, nil, "apple_desktop:\(key)" as CFString, imageMetadataTag!) else {

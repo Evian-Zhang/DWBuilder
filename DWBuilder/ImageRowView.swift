@@ -17,7 +17,7 @@ struct ImageRowView: View {
                 Text(self.imageMetadata.url.path)
                     .truncationMode(.middle)
                 HStack {
-                    Text(self.description(for: self.imageMetadata.latitude))
+                    Text(self.description(for: self.imageMetadata.latitude, position: self.imageMetadata.latitudePosition))
                     Text("Shot at \(UniversalDateFormatter.instance.string(from: self.imageMetadata.date))")
                 }
             }
@@ -29,18 +29,15 @@ struct ImageRowView: View {
                 Text("Modify")
             }
         }
-            .sheet(isPresented: self.$isSheetShown, onDismiss: {
-                print("Dismissed")
-            }) {
-                ImageMetadataView(isPresented: self.$isSheetShown, imageMetadata: self.$imageMetadata)
+            .sheet(isPresented: self.$isSheetShown) {
+                ImageMetadataView(imageMetadata: self.$imageMetadata)
             }
     }
     
-    func description(for latitude: Double) -> String {
-        if latitude > 0.0 {
-            return String(format: "Latitude %.2f north", latitude)
-        } else {
-            return String(format: "Latitude %.2f south", latitude)
+    func description(for latitude: Double, position: LatitudePosition) -> String {
+        switch position {
+            case .North: return String(format: "Latitude %.2f north", latitude)
+            case .South: return String(format: "Latitude %.2f south", latitude)
         }
     }
 }
