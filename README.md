@@ -3,7 +3,7 @@
 
 ## macOS 11.0及以上
 
-支持macOS 11.0及以上的DWBuilder下载地址：<https://github.com/Evian-Zhang/DWBuilder/releases/latest/download/DWBuilder.zip>
+支持macOS 11.0及以上的DWBuilder（x86_64, arm64）下载地址：<https://github.com/Evian-Zhang/DWBuilder/releases/latest/download/DWBuilder.zip>
 
 ## macOS 10.15及以下
 
