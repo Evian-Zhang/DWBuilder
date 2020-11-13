@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import UniformTypeIdentifiers
 
 struct ImageListView: View {
     @Binding var imageMetadatas: [ImageMetadata]
     @State var selectedIndex: Int? = nil
+    @State var isFileImporterPresented: Bool = false
     
     static let DEFAULT_LATITUDE_POSITION = LatitudePosition.North
     static let DEFAULT_LATITUDE = 30.0
@@ -20,6 +22,14 @@ struct ImageListView: View {
                 Button(action: self.onPlusButtonPressed) {
                     Image(systemName: "plus")
                 }
+                    .fileImporter(isPresented: self.$isFileImporterPresented, allowedContentTypes: [UTType.image], allowsMultipleSelection: true, onCompletion: { result in
+                        if case let .success(urls) = result {
+                            let addedImageMetadatas = urls.map { url in
+                                ImageMetadata(url: url, latitudePosition: Self.DEFAULT_LATITUDE_POSITION, latitude: Self.DEFAULT_LATITUDE, date: Date())
+                            }
+                            self.imageMetadatas.append(contentsOf: addedImageMetadatas)
+                        }
+                    })
                 Button(action: self.onDeleteButtonPressed) {
                     Image(systemName: "minus")
                 }
@@ -45,17 +55,7 @@ struct ImageListView: View {
     }
     
     func onPlusButtonPressed() {
-        let openPanel = NSOpenPanel()
-        openPanel.canChooseFiles = true
-        openPanel.canChooseDirectories = false
-        openPanel.allowsMultipleSelection = true
-        
-        if openPanel.runModal() == .OK {
-            let addedImageMetadatas = openPanel.urls.map { url in
-                ImageMetadata(url: url, latitudePosition: Self.DEFAULT_LATITUDE_POSITION, latitude: Self.DEFAULT_LATITUDE, date: Date())
-            }
-            self.imageMetadatas.append(contentsOf: addedImageMetadatas)
-        }
+        self.isFileImporterPresented = true
     }
     
     func onDeleteButtonPressed() {
